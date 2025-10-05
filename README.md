@@ -14,6 +14,8 @@ Copy this repository to your local machine.
 - If you are comfortable, use git: `git clone this-repo`
 - Otherwise, download as .zip file and unpack locally:
 
+![Use the Download ZIP button](img/download_zip.png)
+
 ## Set-Up
 
 First, create a virtual environment for the project:
