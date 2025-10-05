@@ -1,6 +1,4 @@
-import sys
-
-from src.demo.demo import say_hello
+from src.demo import say_hello
 
 def test_demo(capsys) -> None:
     say_hello()

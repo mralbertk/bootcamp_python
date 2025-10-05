@@ -61,3 +61,4 @@ Desktop.ini
 .tox/
 pip-log.txt
 pip-delete-this-arg.txt
+pandas/

@@ -1,5 +1,5 @@
 import pytest
-import src.hello.hello as h
+import src.hello as h
 
 def test_greeting() -> None:
     message = h.make_greeting("max")
