@@ -44,8 +44,8 @@ Set-ExecutionPolicy Unrestricted -Scope Process
 
 Then install the project requirements locally:
 
-- If you are not using anaconda: `python -m pip install -r requirements.txt`
-- If using anaconda: `pip install -r requirements.txt`
+- If using the Python venv module: `python -m pip install -r requirements.txt`
+- If using anaconda: `conda install --file requirements.txt`
 
 Finally, configure visual studio code to use the `pytest` library.
 
