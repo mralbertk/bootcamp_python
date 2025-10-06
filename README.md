@@ -11,7 +11,7 @@ This repository contains exercises for the Python bootcamp class taught at DSTI.
 
 Copy this repository to your local machine.
 
-- If you are comfortable, use git: `git clone this-repo`
+- If you are comfortable, use git: `git clone https://github.com/mralbertk/bootcamp_python.git`
 - Otherwise, download as .zip file and unpack locally:
 
 ![Use the Download ZIP button](img/download_zip.png)
@@ -49,11 +49,14 @@ Then install the project requirements locally:
 
 Finally, configure visual studio code to use the `pytest` library.
 
-- Create the directory `.vscode` and the file `settings.json`:
+- Create the sub-directory `.vscode` and the file `settings.json`:
     
+    **Important:** Run this command in a Windows terminal and in the directory you installed the repository to.
+
     ```Powershell
     New-Item -Path ".vscode\settings.json" -ItemType File -Force
     ```
+
 - Open the newly created `settings.json` file in visual studio code and insert the following:
 
     ```json
