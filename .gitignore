@@ -58,7 +58,7 @@ Desktop.ini
 .env
 .flaskenv
 .mypy_cache/
+.ipynb_checkpoints/
 .tox/
 pip-log.txt
 pip-delete-this-arg.txt
-pandas/

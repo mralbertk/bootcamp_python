@@ -20,14 +20,21 @@ Copy this repository to your local machine.
 
 First, create a virtual environment for the project:
 
-- In a terminal, navigate to the directory of this repository
-- If using the basic Python virtualenv module: `python -m venv .venv`
-- If using anaconda: `TBD`
+- If using the basic Python virtualenv module: 
+    - In a terminal window, navigate to the directory of this repository: `cd path\to\repository`
+    - Create the virtual environment: `python -m venv .venv`
+- If using anaconda: 
+    - Open the anaconda prompt
+    - Create a new environment: `conda create --name bootcamp_env`
 
 Once your virtual environment is created, activate it:
 
-- If using the Python venv module: `.venv\Scripts\activate`
-- If using anaconda: `TBD`
+- If using the Python venv module: 
+    - Make sure you are still in the repository:
+    - Run this command: `.venv\Scripts\activate`
+- If using anaconda: 
+    - Make sure you are still in the anaconda prompt
+    - Run this command: `conda activate bootcamp_env`
 
 **Important:** If you are using Windows and you get an error message, run the following command in the terminal window:
 
@@ -37,8 +44,8 @@ Set-ExecutionPolicy Unrestricted -Scope Process
 
 Then install the project requirements locally:
 
-- If using pip: `python -m pip install -r requirements.txt`
-- If using anaconda: `TBD`
+- If you are not using anaconda: `python -m pip install -r requirements.txt`
+- If using anaconda: `pip install -r requirements.txt`
 
 Finally, configure visual studio code to use the `pytest` library.
 
