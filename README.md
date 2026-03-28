@@ -1,6 +1,6 @@
 # Python Bootcamp Exercises
 
-This repository contains exercises for the Python bootcamp class taught at DSTI.
+This repository contains support material for the Python bootcamp class taught at DSTI.
 
 ## Prerequisites
 
@@ -47,68 +47,23 @@ Then install the project requirements locally:
 - If using the Python venv module: `python -m pip install -r requirements.txt`
 - If using anaconda: `conda install --file requirements.txt`
 
-Finally, configure visual studio code to use the `pytest` library.
-
-- Create the sub-directory `.vscode` and the file `settings.json`:
-    
-    **Important:** Run this command in a Windows terminal and in the directory you installed the repository to.
-
-    ```Powershell
-    New-Item -Path ".vscode\settings.json" -ItemType File -Force
-    ```
-
-- Open the newly created `settings.json` file in visual studio code and insert the following:
-
-    ```json
-    {
-        "python.testing.pytestArgs": [
-            "test"
-        ],
-        "python.testing.unittestEnabled": false,
-        "python.testing.pytestEnabled": true
-    }
-    ```
-
 ## Usage
 
-This repository contains a set of exercises in the `src` directory and unit tests in the `tests` directory. It is designed so that you may autonomously complete the exercises and test if your answer is correct.
+Find [Jupyter notebooks](https://jupyter.org/) with support material in the [`src/` directory](src/). 
 
-First, fill in the function in the prepared Python file. Pay close attention to the instructions because your function is expected to produce exactly the same output.
+You can run these in Visual Studio code or in a browser:
 
-```python
-# src/demo.py
-def say_hello() -> None:
-    """
-    When called, this function prints 'hello world" to your terminal.
-    
-    Example:
-        say_hello() prints "hello world" to the terminal.
+### Visual Studio Code
 
-    Parameters:
-        None
+1. Open Visual Studio Code
+2. Navigate to the directory you installed this repository in
+3. Open the Notebook files and install required extensions if prompted
 
-    Returns:
-        None
-    """
-    print("hello world")
+### Browser
 
-
-# -- Do not modify code below this line
-def main():
-    say_hello()
-
-
-if __name__ == "__main__":
-    main()
-
-```
-
-Then, find the associated test file in `tests/` and run click the green `run` icon next to it. 
-
-If your solution is correct, the test passes:
-
-![A passed unit test with a green checkmark](img/test_passed.png)
-
-Otherwise, it fails:
-
-![A failed unit test with a red cross](img/test_failed.png)
+- Navigate to your project directory, either in the Windows terminal or the anaconda prompt
+- Make sure your virtual environment is active
+    - In terminal: `.\.venv\Scripts\activate`
+    - In anaconda: `conda activate bootcamp_env`
+- Start the jupyter notebook server: `jupyter notebook`
+- Your browser should open automatically, otherwise navigate to [http://localhost:8889/tree](http://localhost:8889/tree))

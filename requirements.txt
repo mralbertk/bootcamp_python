@@ -1,5 +1,1 @@
 jupyter
-matplotlib
-pandas
-pytest
-seaborn
